@@ -16,8 +16,12 @@ const insights = [
 export default function Home() {
   return <main>
     <header className="site-header">
-      <a className="brand" href="#top" aria-label="School Sport Network home"><img src="/ssn-logo-cropped.png" alt="School Sport Network"/></a>
+      <a className="brand" href="#top" aria-label="School Sport Network home"><img src="/ssn-logo.png" alt="School Sport Network"/></a>
       <nav aria-label="Primary navigation"><a href="#about">About</a><a href="#network">Network</a><a href="#events">Events</a><a href="#insights">Insights</a><a href="#research">Research</a></nav>
+      <details className="mobile-menu">
+        <summary aria-label="Open navigation">Menu</summary>
+        <div><a href="#about">About</a><a href="#network">Network</a><a href="#events">Events</a><a href="#insights">Insights</a><a href="#research">Research</a><a href="#join">Join the network</a></div>
+      </details>
       <a className="button button-small" href="#join">Join the network <Arrow/></a>
     </header>
 
@@ -49,6 +53,6 @@ export default function Home() {
 
     <section className="join" id="join"><div><p className="eyebrow"><span/> Stay connected</p><h2>Help shape what<br/>comes next.</h2><p>Join the free contact network for updates, events, research and practical ideas from school sport leaders across Australia.</p><p className="no-fee">No fee. No obligation. Just a better way to stay connected.</p></div><form action="mailto:araw@pymblelc.nsw.edu.au" method="post" encType="text/plain"><div className="form-row"><label>First name<input name="first-name" required placeholder="Your first name"/></label><label>Last name<input name="last-name" required placeholder="Your last name"/></label></div><label>Work email<input type="email" name="email" required placeholder="you@school.edu.au"/></label><div className="form-row"><label>Role<input name="role" required placeholder="e.g. Director of Sport"/></label><label>State<select name="state" required defaultValue=""><option value="" disabled>Select state</option><option>NSW</option><option>QLD</option><option>VIC</option><option>SA</option><option>WA</option><option>TAS</option><option>ACT</option><option>NT</option><option>International</option></select></label></div><label>School or organisation<input name="organisation" required placeholder="Your school or organisation"/></label><label className="check"><input type="checkbox" required/><span>I agree to receive occasional School Sport Network updates. I can unsubscribe at any time.</span></label><button className="button button-navy" type="submit">Join the network <Arrow/></button></form></section>
 
-    <footer><a className="brand footer-brand" href="#top"><img src="/ssn-logo-cropped.png" alt="School Sport Network"/></a><p>Connecting the leaders shaping school sport.</p><div><a href="#about">About</a><a href="#events">Events</a><a href="#insights">Insights</a><a href="#join">Contact</a><a href="#">Privacy</a><a href="#">LinkedIn ↗</a></div><small>© 2026 School Sport Network. Founding year.</small></footer>
+    <footer><a className="brand footer-brand" href="#top"><img src="/ssn-logo.png" alt="School Sport Network"/></a><p>Connecting the leaders shaping school sport.</p><div><a href="#about">About</a><a href="#events">Events</a><a href="#insights">Insights</a><a href="#join">Contact</a><a href="#">Privacy</a><a href="#">LinkedIn ↗</a></div><small>© 2026 School Sport Network. Founding year.</small></footer>
   </main>;
 }
