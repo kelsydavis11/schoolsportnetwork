@@ -18,6 +18,9 @@ if [[ ! -x "${vinext}" ]]; then
   exit 69
 fi
 
+# Copy the verified original logo into the deployable public asset directory.
+cp "${SITES_PROJECT_ROOT}/SSN Logo Aug 26.png" "${SITES_PROJECT_ROOT}/public/ssn-logo.png"
+
 echo "Running bounded vinext build..."
 timeout \
   --signal=TERM \
